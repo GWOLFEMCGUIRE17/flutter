@@ -63,6 +63,7 @@ class StockSettingsState extends State<StockSettings> {
     switch (widget.configuration.stockMode) {
       case StockMode.optimistic:
         _handleOptimismChanged(false);
+        break;
       case StockMode.pessimistic:
         showDialog<bool>(
           context: context,
